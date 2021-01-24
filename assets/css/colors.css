@@ -1,0 +1,164 @@
+::-moz-selection {
+  color: #fff;
+  background: #000;
+}
+
+::selection {
+  color: #fff;
+  background: #000;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  color: #000;
+}
+
+.bg-primary, .btn-primary {
+  background: #002F44 !important;
+}
+
+.text-primary {
+  color: #002F44 !important;
+}
+
+.border-primary {
+  border-color: #002F44 !important;
+}
+
+.bg-secondary, .btn-secondary {
+  background-color: #005163 !important;
+}
+
+.text-secondary {
+  color: #005163 !important;
+}
+
+.border-secondary {
+  border-color: #005163 !important;
+}
+
+.btn-primary, .btn-secondary, .btn-blue {
+  color: #fff !important;
+}
+
+.btn-primary, .btn-secondary, .btn-blue {
+  border-color: transparent !important;
+}
+
+.btn-blue {
+  background-color: #337ab7 !important;
+}
+
+.bg-light {
+  background-color: #cccccc !important;
+}
+
+.bg-primary-gradient-x {
+  background: #002F44;
+  background: -webkit-gradient(linear, left top, right top, from(#039C78), to(#053868));
+  background: linear-gradient(to right, #039C78 0%, #053868 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='map-get($colors, mainGradColor1)', endColorstr='map-get($colors, mainGradColor2)', GradientType=1);
+}
+
+/* Generals */
+.dropdown-list li a {
+  color: #000;
+}
+
+.dropdown-list li a:hover {
+  color: #002F44;
+}
+
+/* Headers */
+#nav-wrap {
+  background-color: #002F44;
+}
+
+#top-bar, #top-bar a {
+  color: #fff;
+}
+
+#nav-wrap .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+#nav-wrap .navbar-nav > li > .nav-link:hover {
+  background-color: #f7f7f7;
+  color: #002F44 !important;
+}
+
+#nav-wrap .navbar-nav .dropdown-menu a:hover {
+  background-color: #002F44;
+  color: #fff !important;
+}
+
+/* Footer */
+#main-footer {
+  color: #E6E6E6;
+}
+
+#footer-wrap {
+  background-color: #005163;
+}
+
+#copyright {
+  color: #fff;
+  background-color: #002F44;
+}
+
+/**/
+.blk-tit-style {
+  background-color: #005163;
+}
+
+.blk-tit.pattern-blk {
+  background-color: #005163;
+}
+
+.paper-item .paper-desc p {
+  color: #002F44;
+}
+
+.paper-item:hover .paper-desc p {
+  color: #005163;
+}
+
+.events-nav.nav-pills .nav-link.active, .page-item.active .page-link {
+  background-color: #005163;
+  color: #fff;
+  border-color: #005163;
+}
+
+.events-nav.nav-pills .nav-link, .page-link {
+  color: #005163;
+}
+
+#papers-pg .btn-link {
+  color: #005163;
+}
+
+.event-item-2 {
+  color: #002F44 !important;
+}
+
+/* Transition */
+a, .btn:before, .nav-item .nav-link:after,
+#header-wrap,
+#header-wrap.header-fixed .navbar-brand,
+#header-wrap.header-fixed .navbar-brand img,
+.event-item {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/*# sourceMappingURL=colors.css.map */

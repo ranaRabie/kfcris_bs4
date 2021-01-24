@@ -1,0 +1,113 @@
+$colors: (
+        main: #000, // Body Main Text
+        primary: #002F44, // headings
+        secondary: #005163, // buttons and sub headings
+        
+        thirdly: #275d68,
+        Fourthly: #63829e,
+        blueColor: #337ab7,
+        
+        light: #cccccc,
+
+        mainGradColor1: #039C78, // Gradient Color 1 Intro Bg 
+        mainGradColor2: #053868, // Gradient Color 2 Intro Bg
+        
+
+        blackColor: #000,
+        whiteColor: #fff,
+
+        selectionBg: #000,
+        selectionColor: #fff,
+        scrollTrackBg: #f1f1f1,
+        scrollThumbBg: #888,
+        scrollThumbHoverBg: #555,
+);
+
+$transition: (
+  main: all 0.5s ease
+);
+
+::-moz-selection{color: map_get($colors, selectionColor);background: map_get($colors, selectionBg);}
+::selection {color: map_get($colors, selectionColor);background: map_get($colors, selectionBg);}
+::-webkit-scrollbar-track {background: map_get($colors, scrollTrackBg);}
+::-webkit-scrollbar-thumb {background: map_get($colors, scrollThumbBg);}
+::-webkit-scrollbar-thumb:hover {background: map_get($colors, scrollThumbHoverBg);}
+
+body{color: map-get($colors, main);}
+
+.bg-primary, .btn-primary
+{
+  background: map-get($colors, primary) !important;
+}
+.text-primary{
+  color: map-get($colors, primary) !important;
+}
+.border-primary{
+  border-color: map-get($colors, primary) !important;
+}
+.bg-secondary, .btn-secondary{
+  background-color:  map-get($colors, secondary) !important;
+}
+.text-secondary{
+  color: map-get($colors, secondary) !important;
+}
+.border-secondary{
+  border-color:  map-get($colors, secondary) !important;
+}
+.btn-primary, .btn-secondary, .btn-blue{
+  color: map-get($colors, whiteColor) !important;
+}
+.btn-primary, .btn-secondary, .btn-blue{border-color: transparent!important;}
+
+.btn-blue{
+  background-color:  map-get($colors, blueColor) !important;
+}
+.bg-light{
+  background-color:  map-get($colors, light) !important;
+}
+
+.bg-primary-gradient-x {
+  background: map-get($colors, primary);
+  background: -moz-linear-gradient(left, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
+  background: -webkit-linear-gradient(left, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
+  background: -o-linear-gradient(left, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
+  background: -ms-linear-gradient(left, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
+  background: linear-gradient(to right, map-get($colors, mainGradColor1) 0%, map-get($colors, mainGradColor2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='map-get($colors, mainGradColor1)', endColorstr='map-get($colors, mainGradColor2)', GradientType=1);
+}
+
+
+/* Generals */
+.dropdown-list li a{color: map-get($colors, blackColor );}
+.dropdown-list li a:hover{color: map-get($colors, primary );background-color: map-get($colors, primaryLight1 );}
+
+/* Headers */
+#nav-wrap{background-color: map-get($colors, primary );}
+#top-bar, #top-bar a{color: map-get($colors, whiteColor );}
+#nav-wrap .navbar-nav .nav-link {color: map-get($colors, whiteColor )!important;}
+#nav-wrap .navbar-nav > li > .nav-link:hover{background-color: #f7f7f7;color: map-get($colors, primary )!important;}
+#nav-wrap .navbar-nav .dropdown-menu a:hover{background-color: map-get($colors, primary );color: map-get($colors, whiteColor )!important;}
+
+/* Footer */
+#main-footer{color: #E6E6E6;}
+#footer-wrap{background-color: map-get($colors, secondary );}
+#copyright{color: #fff;background-color: map-get($colors, primary );}
+
+/**/
+.blk-tit-style{background-color: map-get($colors, secondary );}
+.blk-tit.pattern-blk{background-color: map-get($colors, secondary );}
+.paper-item .paper-desc p{color:map-get($colors, primary );}
+.paper-item:hover .paper-desc p{color:map-get($colors, secondary );}
+.events-nav.nav-pills .nav-link.active, .page-item.active .page-link{background-color: map-get($colors, secondary );color: #fff;border-color: map-get($colors, secondary );}
+.events-nav.nav-pills .nav-link, .page-link{color: map-get($colors, secondary );}
+#papers-pg .btn-link{color: map-get($colors, secondary );}
+.event-item-2{color: map-get($colors, primary )!important;}
+
+/* Transition */
+a, .btn:before, .nav-item .nav-link:after,
+#header-wrap,
+#header-wrap.header-fixed .navbar-brand,
+#header-wrap.header-fixed .navbar-brand img,
+.event-item{
+  transition: map_get($transition, main);
+}
